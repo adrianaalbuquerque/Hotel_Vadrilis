@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Hotel Vadrilis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/da383dec6a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" 
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <link href="css/carous.css" rel="stylesheet">
+    <link href="css/ajeitandomudancascausadaspelobootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-------------------- Navigation Bar -------------------->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span><i class="fas fa-bars"></i></span>
+            </div>
+          </div>
+      </label>
+      <label class="logo"><i class="fas fa-spa"></i>  HOTEL VADRILIS  <i class="fas fa-spa"></i></label>
+      <ul>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>SOBRE</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>QUARTOS</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="caixinha">
+            <div class="botaonavbar botao-navbar">
+              <span>SERVIÇOS</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <!-------------------- Home -------------------->  
+    <section class="sedohe">
+      <div class="header"> 
+        <div class="nome_hotel">
+          <h1>Hotel Vadrilis</h1>
+        </div>
+        <br>
+        <div class="partecompleta">
+          <form action="/server/reservas_check_disp.php" method="POST">
+            <div class="partedocheck">
+              <label for="date">CHECK-IN</label>
+              <br>
+              <br>
+              <input type="date" name="checkin" id="date1">
+            </div>
+            <div class="partedocheck">
+              <label for="date">CHECK-OUT</label>
+              <br>
+              <br>
+              <input type="date" name="checkout" id="date2">
+            </div>
+            <div class="partedocheck">
+              <label for="quantity">PESSOAS</label>
+              <br>
+              <br>
+              <input type="number" id="quantity" name="quantity" min="1" max="5">
+            </div>
+            <div class="checando">
+              <input type="submit" value="CHECAR DISPONIBILIDADE">
+            </div>
+          </form>
+        </div>
+        <!-- The video -->
+        <div class="video-container1">
+          <div class="color-overlay1"></div>
+          <video autoplay loop muted id="myVideo">
+            <source src="img/videoht.webm" type="video/webm">
+          </video>
+        </div>
+        <!-- ---------- --> 
+      </div>       
+    </section>
+    <!-------------------- Sobre -------------------->
+    <main>
+    <section class="our_history">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner" id="tentand">
+          <div class="carousel-item active">
+            <img src="./imgcar/slide_historia6.jpg" class="d-block w-100" alt="0">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgcar/slidenh9.jpg" class="d-block w-100" alt="1">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgcar/slidenh3.jpg" class="d-block w-100" alt="2">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgcar/beninas.png" class="d-block w-100" alt="3">
+          </div>
+          <div class="carousel-item">
+            <img src="./imgcar/slidenh6.jpg" class="d-block w-100" alt="4">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="texthistory">
+        <div class="conheca_nossa">
+          <div id="conheca">
+            <span> 
+              <h1> Conheça Nossa </h1> 
+            </span>
+          </div>
+            <span id="historia"> 
+              <h1> História </h1> 
+            </span>
+        </div>
+          <div id="historia_texo">
+          <p id="texto-historia"> O Hotel Vadrilis nasceu no ano de 2020, fruto de um sonho em comum entre três amigas universitárias. Durante os 3 anos de sua construção o hotel foi minuciosamente pensado para que nossos clientes pudessem desfrutar das melhores sensações. Imagine o aconchego e a tranquilidade de se hospedar em um dos mais belos cartões-postais de João Pessoa. No Hotel Vadrilis, você encontra tudo o que precisa para uma viagem apaixonante, de frente para o mar e próximo a tudo o que a cidade tem de mais encantador. São 25 confortáveis apartamentos, sendo 2 suites executiva mar, 10 luxo superior e 13 standart, além de serviços como: restaurante, room service de 8h00 às 22h00, loja de conveniência, espaço kids, copa baby, estacionamento, sauna, hidromassagem, piscina e muito mais. Além dos cuidados com a nossa estrutura, informamos que a lei 12.546/2011, que proíbe o fumo em locais fechados, está em vigência para que todos os hóspedes possam aproveitar ainda melhor a sua estadia. Tudo isso, com a dedicação de uma equipe atenciosa, dedicada e sempre à disposição para fazer de cada momento da sua estadia uma lembrança inesquecível.
+          </p>
+          <div class="box-3">
+            <!--<spam>SOBRE NÓS</spam>-->
+             <div class="w3-container">
+  
+  <botao onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black botao">SOBRE NÓS</botao>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <header class="w3-container w3-teal"> 
+        <spam onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</spam>
+        <h2>Saudações!</h2>
+        <br>
+      </header>
+      <div class="w3-container">
+        Este projeto foi realizado por Adriana, Alíssia e Vanessa, estudantes do curso Sistemas para Internet do Instituto Federal da Paraíba (IFPB). É destinado a disciplina de Linguagens de Script, cujos professores são Luiz Carlos e Francisco. O projeto se trata da simulação de um site, com tema livre. Nós decidimos simular um site de Hotel.
+        <br>
+        <br>
+        Contato da equipe:
+        <br>
+        <br>
+        • Adriana Albuquerque de Moura | adriana.albuquerque@academico.ifpb.edu.br
+        <br>
+        • Alíssia Deolinda Oliveira de Lima | alissia.lima@academico.ifpb.edu.br
+        <br>
+        • Vanessa Vieira Borges | 
+        vanessa.vieira@academico.ifpb.edu.br
+      </div>
+      <footer class="w3-container w3-teal">
+        <br>
+      </footer>
+    </div>
+  </div>
+</div>                    
+          </div> <!--fim box-3 -->
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  
+  
+    <!-------------------- Quartos -------------------->
+    <span id="titulo_quartos">
+      <h1 id="quartos"> NOSSOS MELHORES QUARTOS </h1>
+    </span>
+    <div class="grid-container">
+      <div class="grid-item-left1">
+        <div class="card-img1">
+          <div class="img-left-wrapper1">
+            <img class="img-left1" src="../img/imgs-04.jpg" alt="Quarto 1">    
+          </div>            
+          <div class="img-caption-left1">
+            <div class="img-inner1">
+              <div>
+                <h2 class= "card-title-text1">Quarto Pequeno</h2>
+              </div>
+              <div class="img-info-left1">
+                <div><i class="far fa-user-circle fa-lg"><div class="card-info-text1 card-info-inline1">  1 HÓSPEDE</div></i></div>
+                <div><i class="fas fa-home fa-lg"><div class="card-info-text1 card-info-inline1">17 m² </div></i></div>                
+              </div>
+              <div class="card-info-text1 card-info-description1">Um quarto pequeno e aconchegante, com 17 metros quadrados. Ideal para quem está viajando sozinho e busca paz e tranquilidade, lazer e diversão.</div>
+              <div>
+                <button class="button">RESERVE AGORA POR R$40</button>
+              </div>
+            </div>            
+          </div>
+        </div>        
+      </div>
+    </div>
+
+    <!-------------------- pagina 5 (serviços do hotel) -------------------->
+    <section class="pag_5">
+      <div class="container_5">
+        <section class="hotel-services">
+          <h1 id="servicoshotel">Serviços do Hotel</h1>
+        </section>
+      <div class="servicos_geral">
+        <div class="container_servicos">
+   
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--------------------Pagina 6 (em torno do hotel) -------------------->
+    <section class="pag_6">
+      <div class="container_6">
+        <section class="around_the_hotel">
+          <h2>Em torno do Hotel</h2>
+        </section>
+        <div class="centralizacao_3fig">
+        </div>
+      </div>
+    </section>
+
+    <!-------------------- pagina 7 (comentários dos clientes) -------------------->
+    <section class="pag_7">
+      <div class="container_7">
+        <section class="clients_say">
+          <h2>Comentários dos nossos clientes fantásticos</h2>
+        </section>
+        <div class="container_clientes">
+          <div class="item_container_clientes">
+            <div class="parte_texto">
+              <div class="user_text">
+                <img src="img/pht_1.jpg">
+                <p>
+                  <em>"Todas as cozinhas do Hotel Vadrilis estão equipadas com fogão, micro-ondas e geladeira. Além disso, o hotel fornece aos visitantes lavanderia, centros de passar roupa e roupas de cama de qualidade com almofadas extras em todas as áreas."</em>
+                </p>
+              </div>
+              <div class="user_name">
+                Mikael
+              </div>
+              <div class="user_desk">
+                VIAJANTE
+              </div>
+            </div>
+          </div>
+          <div class="item_container_clientes">
+            <div class="parte_texto2">
+              <div class="user_text">
+              <img src="img/pht_2.jpg">
+              <br>
+                <p>
+                  <em>"O hotel possui estacionamento gratuito! Por um custo, os hóspedes podem solicitar uma solução de estocagem de mercearia para cozinha ou distribuição de mercearia. Serviços de lavagem a seco também estão disponíveis."</em>
+                </p>
+              </div>
+              <div class="user_name">
+                Estela
+              </div>
+              <div class="user_desk">
+                VIAJANTE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-------------------- Pagina 8 (mapa) -------------------->
+    <section class="pag_8">
+      <div class="findushere">
+        <p>Encontre-nos aqui</p>
+      </div>
+      <div class="mapaa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.4582707790096!2d-34.87499884397443!3d-7.135649594847398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1sen!2sbr!4v1521749915692" 
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border:0" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+    <!------------------ POP-UP---------------->
+    <div class="newsletter-modal">
+      <div class="newsletter-bg">
+        <form id="news-form" action="/server/sugestoes_receber_ofertas.php" method="POST">
+           <label for="email">CADASTRE-SE</label>
+           <br>
+           <br>
+          <p>Receba promoções, ofertas, códigos promocionais e 10% OFF na sua primeira reserva!</p>
+          <div class="form-group">
+            <input id="email" type="email" placeholder="Email">
+            <input id="submit-btn" type="submit" value="Eu quero!">
+           <spanzito></spanzito>
+          </div>
+        </form>  
+      </div>
+    </div>
+    <!------------------------------------------------------------------>
+    <script src="js/popzito.js" type="module"></script>
+    <script src="js/main3.js" type="module"></script>
+    <script src="js/main2.js" type="module"></script>
+    <!--<script src="js/main1.js" type="module"></script>-->
+    <script src="js/main1_1.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    <script>
+      var myCarousel = document.querySelector('#myCarousel');
+      var carousel = new bootstrap.Carousel(myCarousel);
+    </script>
+  </body>
+  <!-------------------- Footer -------------------->
+  <footer>
+      <section class="footer-content">
+        <section class="address">
+          <h2>Suporte por telefone</h2>
+          <p>24 HORAS POR DIA</p>
+          <br>
+          <h3>+ 01 234 567 890</h3>
+        </section>
+        <section class="social">
+          <h2>Siga-nos</h2>
+          <p>CANAIS DE MÍDIA SOCIAL<p>
+          <br>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </section>
+        <section class="sugestoes">
+          <h1>Comentários</h1>
+          <form action="/server/sugestoes_receber_ofertas.php" method="POST">
+            <div class="form-group-message"> 
+              <label for="message">DEIXE AQUI SUA CRÍTICA, SUGESTÕES OU ELOGIOS!</label>
+              <br>
+              <textarea id="message" name="message" rows="2" cols="27"></textarea>
+              <div id="enviar_button" type="submit" value="ENVIAR" style="margin-top: 10px; font-style: italic"></div>
+            </div>
+          </form>
+        </section>
+      </section>
+      <section class="copyright">
+        <span> © Copyright 2021 - Todos os direitos reservados</span>
+      </section>
+    </footer>
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+  <!-- Adic o componente React. -->
+  <script src="js/enviar_button.js"></script>
+</html>

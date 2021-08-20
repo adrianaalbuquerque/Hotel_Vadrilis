@@ -1,0 +1,43 @@
+.our-history #carouselExampleIndicators {
+  width: 50% !important;
+}
+
+.carousel-inner {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+@media (min-width: 950px) {
+  .carousel {
+    flex-grow: 1;
+    width: 50%;
+    height: 850px;
+  }
+
+  .carousel slide {
+    width: 500px;
+    height: 200px;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+  }
+
+  carousel-inne img {
+    border: 1px solid red;
+    height: 100%;
+    align-self: stretch;
+  }
+
+  .texthistory {
+    height: 850px;
+  }
+
+  #tentand .carousel-item img {
+    min-height: 850px;
+    overflow: hidden;
+  }
+
+  .our_history {
+  flex-direction: row;
+  justify-self: auto;
+  }
+
+}
